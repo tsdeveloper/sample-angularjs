@@ -12,8 +12,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SON Angular JS</title>
 
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-reboot.min.css"/>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap-reboot.min.css"/>
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
 
 
 </head>
@@ -64,10 +64,10 @@
 
 </div>
 
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="script.js"></script>
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../bower_components/angular/angular.min.js"></script>
+<script src="../../script.js"></script>
 
 <script>
 

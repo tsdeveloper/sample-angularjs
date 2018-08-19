@@ -29,14 +29,5 @@ var CtrlListaPerfis  = function ($scope) {
         $scope.vStatus = '';
     };
 
-    $scope.delete = function (index) {
-        $scope.perfis.splice(index,1);
-    };
 
-    $scope.edit = function (index) {
-      console.log($scope.perfis[index]);
-      $scope.vPerfil = $scope.perfis[index].nome;
-      $scope.vStatus = $scope.perfis[index].status;
-
-    };
 }
