@@ -1,10 +1,12 @@
 var CtrlApp = function ($scope) {
 
     $scope.nome = "Developer Web with AngularJS 1x"
-    console.log($scope);
+    $scope.logar = function() {
+        console.log('teste:', $scope.buscar);
+    };
 
 };
-
+var app = angular.module('myApp', []);
 var CtrlListaPerfis  = function ($scope) {
 
     $scope.perfis = [
@@ -17,7 +19,20 @@ var CtrlListaPerfis  = function ($scope) {
         {nome:  'Suporte Técnico Nível 1', status: 'Bloqueado'},
         {nome:  'Suporte Técnico Nível 2', status: 'Bloqueado'},
         {nome:  'Suporte Técnico Nível 3', status: 'Bloqueado'},
-    ]
+    ];
+
+    $.unique([2,3,4,5,5,4]);
+    /*$scope.statusOptions = $scope.perfis.map(i => i.status);*/
+
+    console.log('status:', $scope.statusOptions);
+
+    /*$scope.$watch('buscar', function () {
+   console.log($scope.buscar);
+    });*/
+
+  /*  $scope.$watch('buscar', function () {
+        console.log($scope.buscar);
+    });*/
     
     $scope.add = function () {
         $scope.perfis.push({
@@ -39,4 +54,6 @@ var CtrlListaPerfis  = function ($scope) {
       $scope.vStatus = $scope.perfis[index].status;
 
     };
+
+
 }
