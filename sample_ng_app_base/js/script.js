@@ -1,5 +1,12 @@
 var app = angular
     .module('pessoas', [])
+    .config(function ($routeProvider) {
+        $routeProvider
+            .when('/', {
+                templateUrl: 'listar.html'
+            });
+
+    })
     .controller('CtrlPessoas', ['$scope', function (s) {
 
         s.nome  = 'Listagem de Pessoas';
