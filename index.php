@@ -29,7 +29,6 @@
         <div class="col"><h1 class="text-success"> {{nome}}</h1></div>
     </div>
 
-
     <div class="row">
         <div class="col-3">
             <label for="nome" class="control-label">Filtro</label>
@@ -40,9 +39,17 @@
             Total: <div class="badge badge-info font-weight-bold">{{perfis.length}}</div>
         </div>
 
+        <div class="col-12">
+            <select name="selected" id="selected" class="col-3 form-control"
+                    ng-model="selected"
+                    ng-options="perfil.status for perfil in perfis | filter:buscar">
+                <option value="">Selecione um status</option>
+            </select>
+        </div>
+
         <div class="col">
             <ul>
-                <li ng-repeat="perfil in perfis | filter:buscar">{{perfil.nome}}
+                <li ng-repeat="perfil in perfis">{{perfil.nome}}
                     <btn ng-click="edit($index)" class="btn btn-outline-info fa fa-edit"></btn>
                     <btn ng-click="delete($index)" class="btn btn-outline-danger fa fa-trash"></btn>
                 </li>

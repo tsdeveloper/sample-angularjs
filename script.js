@@ -21,6 +21,11 @@ var CtrlListaPerfis  = function ($scope) {
         {nome:  'Suporte Técnico Nível 3', status: 'Bloqueado'},
     ];
 
+    $.unique([2,3,4,5,5,4]);
+    /*$scope.statusOptions = $scope.perfis.map(i => i.status);*/
+
+    console.log('status:', $scope.statusOptions);
+
     /*$scope.$watch('buscar', function () {
    console.log($scope.buscar);
     });*/
